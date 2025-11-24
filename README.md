@@ -1,0 +1,1 @@
+Minha IA geradora de texto produz respostas rápidas, coerentes e adaptadas ao contexto. Ela explica temas, cria conteúdo, responde sobre qualquer assunto e mantém clareza mesmo em solicitações complexas. Projetada para estudos, automações, criatividade e testes avançados de linguagem
