@@ -1,0 +1,73 @@
+<!Doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BrainWave — IA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>BrainWave IA</h1>
+    <p class="subtitle">Gerador de ideias e textos com inteligência artificial</p>
+  </header>
+
+  <!-- NAV -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#gerador">Gerador</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTAINER PRINCIPAL -->
+  <div class="layout">
+
+    <!-- MAIN -->
+    <main id="gerador" class="main">
+
+      <h2>Gerar texto com IA</h2>
+
+      <textarea id="prompt" placeholder="Digite um prompt para a IA..."></textarea>
+
+      <div class="controls">
+        <label>Comprimento (tokens)
+          <input id="max_length" type="number" value="120" min="10" max="1024" />
+        </label>
+        <button id="generate">Gerar</button>
+      </div>
+
+      <section id="result-area" class="result hidden">
+        <h3>Resultado</h3>
+        <pre id="result"></pre>
+      </section>
+
+      <div id="status" class="status"></div>
+
+    </main>
+
+    <!-- ASIDE -->
+    <aside class="aside" id="sobre">
+      <h2>Sobre o BrainWave</h2>
+      <p>
+        Este projeto utiliza a API gratuita da Hugging Face para gerar textos com modelos de IA.
+        É um exemplo intermediário usando HTML5, CSS3, JS e Python (FastAPI).
+      </p>
+      <p>
+        Você pode modificar o backend para trocar o modelo e ajustar o comportamento da IA.
+      </p>
+    </aside>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>BrainWave © 2025 — Projeto educacional com IA</p>
+  </footer>
+
+  <script src="static/app.js"></script>
+</body>
+</html>

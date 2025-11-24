@@ -1,0 +1,29 @@
+[
+{
+  "prompt": "Explique computação quântica de forma simples",
+  "max_length": 150,
+  "temperature": 0.8,
+  "mode": "explainer",
+  "metadata": {
+    "user_id": "anon",
+    "source": "webapp"
+  }
+},
+{
+  "success": true,
+  "model": "gpt2",
+  "tokens_used": 152,
+  "result": "Computação quântica funciona usando qubits...",
+  "elapsed_ms": 843,
+  "error": null
+},
+{
+  "success": false,
+  "error": {
+    "type": "APIError",
+    "message": "Hugging Face returned status 503",
+    "details": "Model is loading or unavailable"
+  }
+}
+
+]

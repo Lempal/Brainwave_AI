@@ -1,0 +1,181 @@
+/* ============================
+   RESET BÁSICO
+============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0d1117;
+  color: #e6edf3;
+  line-height: 1.5;
+}
+
+/* ============================
+   HEADER
+============================ */
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #aab2bd;
+}
+
+/* ============================
+   NAV
+============================ */
+.navbar {
+  background: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.navbar a {
+  color: #e6edf3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.navbar a:hover {
+  color: #58a6ff;
+}
+
+/* ============================
+   LAYOUT PRINCIPAL
+============================ */
+.layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* ============================
+   MAIN
+============================ */
+.main h2 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  background: #161b22;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1rem;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.controls input {
+  width: 80px;
+  padding: 0.4rem;
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #e6edf3;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  background: #238636;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #2ea043;
+}
+
+.result {
+  background: #161b22;
+  border: 1px solid #30363d;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.hidden {
+  display: none;
+}
+
+.status {
+  margin-top: 1rem;
+  color: #aab2bd;
+}
+
+/* ============================
+   ASIDE
+============================ */
+.aside {
+  background: #161b22;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  height: fit-content;
+}
+
+.aside h2 {
+  margin-bottom: 1rem;
+}
+
+.aside p {
+  color: #c4ccd4;
+  margin-bottom: 1rem;
+}
+
+/* ============================
+   FOOTER
+============================ */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #161b22;
+  border-top: 1px solid #30363d;
+  margin-top: 2rem;
+  color: #aab2bd;
+}
+
+/* ============================
+   RESPONSIVO
+============================ */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
